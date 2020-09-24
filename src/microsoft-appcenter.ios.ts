@@ -1,5 +1,5 @@
 import { AppCenterSettings, TrackProperties } from './microsoft-appcenter.common';
-import * as application from "tns-core-modules/application";
+import { Application as application} from "@nativescript/core";
 
 declare const MSAppCenter: any;
 declare const MSAnalytics: any;
@@ -10,6 +10,7 @@ export class AppCenter {
     public start(settings: AppCenterSettings): void {
         const services = NSMutableArray.alloc().init();
 
+        console.log(settings);
         if (settings.analytics) {
             services.addObject(MSAnalytics);
         }
@@ -109,6 +110,7 @@ export class AppCenterDistribute {
     }
 }
 
+@NativeClass()
 export class AppCenterDelegate extends UIResponder implements UIApplicationDelegate {
     private static settings: AppCenterSettings;
     public static ObjCProtocols = [UIApplicationDelegate];

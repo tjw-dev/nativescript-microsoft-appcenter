@@ -5,7 +5,7 @@ android {
 }
 
 dependencies {
-    def appCenterSdkVersion = '2.2.0'
+    def appCenterSdkVersion = '3.3.1'
     compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
     compile "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion}"
