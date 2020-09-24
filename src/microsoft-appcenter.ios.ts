@@ -10,7 +10,6 @@ export class AppCenter {
     public start(settings: AppCenterSettings): void {
         const services = NSMutableArray.alloc().init();
 
-        console.log(settings);
         if (settings.analytics) {
             services.addObject(MSAnalytics);
         }
