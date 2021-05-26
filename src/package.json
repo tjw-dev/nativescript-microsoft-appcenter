@@ -1,6 +1,6 @@
 {
     "name": "@tjw-dev/nativescript-microsoft-appcenter",
-    "version": "3.0.2",
+    "version": "3.0.4",
     "description": "Microsoft App Center plugin for NativeScript.",
     "repository": "github:tjw-dev/nativescript-microsoft-appcenter",
     "main": "microsoft-appcenter",
@@ -12,8 +12,7 @@
         }
     },
     "scripts": {
-        "tsc": "tsc -skipLibCheck && ts-patch install",
-        "build": "npm i && tsc && npm run build.native",
+        "build": "npm i --legacy-peer-deps && ts-patch install && tsc && npm run build.native",
         "build.native": "tns plugin build",
         "postclone": "npm i && node scripts/postclone.js && cd ../demo && npm i && cd ../src && npm run plugin.link",
         "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
