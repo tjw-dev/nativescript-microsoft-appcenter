@@ -1,19 +1,20 @@
 {
-    "name": "nativescript-microsoft-appcenter-v2",
+    "name": "@tjw-dev/nativescript-microsoft-appcenter",
     "version": "3.0.2",
     "description": "Microsoft App Center plugin for NativeScript.",
+    "repository": "github:tjw-dev/nativescript-microsoft-appcenter",
     "main": "microsoft-appcenter",
     "typings": "index.d.ts",
     "nativescript": {
         "platforms": {
-            "ios": "6.0.0",
-            "android": "6.0.0"
+            "ios": "7.0.0",
+            "android": "7.0.0"
         }
     },
     "scripts": {
         "tsc": "tsc -skipLibCheck && ts-patch install",
         "build": "npm i && tsc && npm run build.native",
-        "build.native": "node scripts/build-native.js",
+        "build.native": "tns plugin build",
         "postclone": "npm i && node scripts/postclone.js && cd ../demo && npm i && cd ../src && npm run plugin.link",
         "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
         "test.ios": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
@@ -44,14 +45,14 @@
         "Push"
     ],
     "author": {
-        "name": "Benedikt Veith",
-        "email": "benedikt.veith@scherer-software.de"
+        "name": "tjw.dev llc",
+        "email": "hello@tjw.dev"
     },
     "bugs": {
-        "url": "https://github.com/benediktveith/nativescript-microsoft-appcenter/issues"
+        "url": "https://github.com/tjw-dev/nativescript-microsoft-appcenter/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/benediktveith/nativescript-microsoft-appcenter",
+    "homepage": "https://github.com/tjw-dev/nativescript-microsoft-appcenter",
     "readmeFilename": "README.md",
     "devDependencies": {
         "@nativescript/core": "~7.0.0",

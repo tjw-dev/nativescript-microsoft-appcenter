@@ -55,12 +55,6 @@ tns plugin add nativescript-microsoft-appcenter
 | **Overview:** Active users, daily sessions per user, session duration, top devices, countries, languages and active users per version. | YES | YES |
 | **Events:** Event name, Count, Trend, Users, User Change and Per User. | YES | YES |
 | **Log flow** | YES | YES |
-
-### Push Features
-| Feature | Android | iOS |
-| --- | --- | --- |
-| Notifications | COMING SOON | COMING SOON |
-| Audiences | COMING SOON | COMING SOON |
     
 ## License
 
